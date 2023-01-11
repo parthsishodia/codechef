@@ -1,0 +1,41 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes 
+		Scanner sc=new Scanner(System.in);
+		int term = sc.nextInt();
+		for(int k=0;k<term;k++){
+		    int[] g=new int[2];
+		    g[0]=sc.nextInt();
+		    g[1]=sc.nextInt();
+		    int n=g[0];
+		    int p=g[1];
+		    int[] arr=new int[n];
+		    for(int i=0;i<n;i++){
+		        arr[i]=sc.nextInt();
+		    }
+		    int h = 0;
+		    int d = 0;
+		    for(int i=0;i<arr.length;i++){
+		        h = h|arr[i];
+		    }
+		    for(int j=0;j<=p;j++){
+		        if((h|j) == p){
+		            d++;
+		            System.out.println(j);
+		            break;
+		        }
+		    }
+		    if(d==0){
+		        System.out.println(-1);
+		    }
+		    
+		}
+	}
+}
