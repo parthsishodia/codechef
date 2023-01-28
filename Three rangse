@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+        int per;
+        cin>>per;
+        while(per--){
+            int t;
+            cin>>t;
+            string s;
+            cin>>s;
+            int q=0;
+            for(auto z: s){
+                if(z=='1') q++;
+            }
+            if(s=="1"||s=="10"){
+                cout<<"NO \n";
+            }else if(q<=3){
+                cout<<"YES \n";
+            }else{
+                cout<<"NO \n";
+            }
+            
+        }
+ return 0;
+}
