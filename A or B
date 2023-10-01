@@ -1,0 +1,31 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+	    Scanner sc=new Scanner(System.in);
+	    int n=sc.nextInt();
+	    while(n-->0){
+	        int A=sc.nextInt();
+	        int B=sc.nextInt();
+	        int sum=0;
+	        int sum1=0;
+	        int sum2=0;
+	         sum1 = (500-(2*A)) + (1000-(4*(A+B)));
+		    sum2 = (500-(2*(A+B))) + (1000-(4*B));
+	        if(sum1>=sum2){
+	        System.out.println(sum1);
+	    }
+	    else{
+	        System.out.println(sum2);
+	    }
+	}
+}
+}
